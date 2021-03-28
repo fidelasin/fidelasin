@@ -10,7 +10,7 @@ $ref='https://www.instagram.com/';
 $delimiter = '-------------' . uniqid();
 $gidenisim=base64_encode("$ad $soyad");
 $resimadi=randstr(15).".jpg";
-$resim  ='https://fidelasin.icu/suatresim/'.$gidenisim;
+$resim  ='https://fidelasin.icu/resim/'.$gidenisim;
 $resimxx = file_get_contents($resim);
 file_put_contents('yedekresim3/'.$resimadi, $resimxx);
 $resimyol = 'yedekresim3/'.$resimadi;
